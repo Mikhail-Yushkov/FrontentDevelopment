@@ -1,0 +1,90 @@
+/*ctrl + / - comment code*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%
+}
+
+/*describe little boxes*/
+p.SmallBox{
+	width: 30%;
+	height: 20%;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 125%;
+	margin: 0px;
+	float: right;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	text-align: center;
+	top: 0px;
+  	right: 0px;
+	padding-top: 3px;
+
+}
+
+/*describe large boxes*/
+.section1, .section2, .section3 {
+  border: 3px solid black;
+  background-color: gray;
+  width: 90%;
+  height: 150px;
+  font-family: Helvetica;
+  color: black;
+  margin: 20px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#p1 {
+  background-color: pink;
+  color: black;
+  position: relative;
+}
+
+#p2 {
+  background-color: red;
+  color: white;
+  position: relative;
+}
+
+#p3 {
+  background-color: yellow;
+  color: black;
+  position: relative;
+}
+
+/*           Large Divices: Desktops;           */
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*           Medium Divices: tablets;           */
+@media (min-width: 768px) and (max-width: 991px) {
+	.section1, .section2 {
+		float: left;
+		width: 44%;
+	}
+	.section3{
+		float: left;
+		width: 92%;
+	}
+}
+
+/*           Small Divices: mobiles;           */
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
+}
